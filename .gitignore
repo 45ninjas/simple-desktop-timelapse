@@ -1,0 +1,8 @@
+*.mkv
+*.mp4
+*.avi
+*.mp3
+*.ogg
+*.wav
+
+merge-list.txt
