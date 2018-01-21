@@ -30,3 +30,27 @@ alt="Example Video" width="240" height="180" border="10" /></a>
 All commands but `init` and `help` have been created with these modules. The`/src/modules.ini` file and `/src/modules/` directory is where all the are kept. If you want to add a new one to add audio for example just duplicate an existing one and hack away. ~~Documentation on modules available here.~~
 
 ### Default/Included Modules
+**merge**: Used to merge videos together.
+**record**: Records time-lapse snippets.
+**target-time**: Speeds up a video to target a desired duration.
+**trim**: Trims/crops a video.
+
+##Project.ini
+The *project.ini* file is copied from the `src\default-project.ini` file. Change it to make your life esier if you find yourself modifying the *project.ini* files frequently.
+
+```
+record fps=4
+video fps=60
+video format=mkv
+record whole input=false
+record size=1920x1080
+record x offset=0
+record y offset=0
+ffmpeg prefix=-loglevel warning -stats
+```
+**record fps**: How many frames to capture every second.
+**video fps**: FPS of video playback. 30 is common, 60 looks 'smoother'.
+**record whole input**: If False the size, x and y offsets are used. ~~If true the whole desktop is recorded inculding mutiple displays~~
+**record size**: The size of the video to capture from the dekstop. You'll probably want this set to your primary monitor's resolution.
+**record x/y offset**: The X and Y coridnates to offset the video by. If you're using your primary display set it to 0,0.
+**ffmpeg prefix**: Every time a ffmpeg command is used these arguments are added before anything else. E.g `ffmpeg <ffmpeg prefix> -i input-video.mp4 output-video.mkv`
