@@ -94,6 +94,8 @@ GOTO end
 
 	copy %~dp0src\default-project.ini project.ini
 	mkdir recordings
+	echo [101;93mWARNING:[0m[93m
+	echo Verify the project.ini file and do a test recording. BEFORE you start a timelapse.[0m
 GOTO end
 
 :execute-module
