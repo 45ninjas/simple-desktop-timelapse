@@ -2,7 +2,7 @@
 
 This collection of scripts produce and edit time-lapses of a windows desktop without having the hassle of images in the tens of thousands. **Directly from your desktop to a video file.**
 
-## Example
+##Example
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=vdX6Fxp3Pzg
 " target="_blank"><img src="http://img.youtube.com/vi/vdX6Fxp3Pzg/0.jpg" 
